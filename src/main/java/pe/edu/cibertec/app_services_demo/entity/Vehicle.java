@@ -1,6 +1,6 @@
 package pe.edu.cibertec.app_services_demo.entity;
 
-import jakarta.persistence.*;
+//import jakarta.persistence.*;
 import lombok.*;
 
 //@Entity
