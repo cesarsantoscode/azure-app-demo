@@ -10,13 +10,13 @@ import pe.edu.cibertec.app_services_demo.repository.VehicleRepository;
 @Controller
 public class VehicleController {
 
-//    @Autowired
-//    VehicleRepository vehicleRepository;
+    @Autowired
+    VehicleRepository vehicleRepository;
 
     @GetMapping("/")
     public String getVehicles(Model model){
 
-        Iterable<Vehicle> vehicles = null; //vehicleRepository.findAll();
+        Iterable<Vehicle> vehicles = vehicleRepository.findAll();
         model.addAttribute("vehicles", vehicles);
         return "vehicles";
 
